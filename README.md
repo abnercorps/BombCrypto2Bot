@@ -14,7 +14,7 @@ I am not responsible for any penalties incurred by those who use the bot, use it
 ## 📄 Documentation
 | - | Language |
 |:---: | :---: |
-| ![Portuguese](https://github.com/pbiajoni/bombcrypto-bot2/blob/main/images/readme/flags/brazil.png) | [Portuguese](https://github.com/pbiajoni/bombcrypto-bot2/blob/main/docs/README_pt-br.md) |
+| ![Portuguese](https://github.com/pbiajoni/bombcrypto-bot2/blob/main/images/readme/flags/brazil.png) | [Portuguese](https://github.com/pbiajoni/BombCrypto2Bot/blob/master/BombCrypto2Bot/docs/README_pt-br.md) |
   
 ## 📌 Glossary
 
