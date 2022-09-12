@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BombCrypto2Bot", "BombCrypto2Bot\BombCrypto2Bot.pyproj", "{06CBD242-AEFD-479F-81A9-55A865E9C877}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06CBD242-AEFD-479F-81A9-55A865E9C877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CBD242-AEFD-479F-81A9-55A865E9C877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CD162CB-8ACC-4FE0-8AE8-6715E24A1FDC}
+	EndGlobalSection
+EndGlobal
