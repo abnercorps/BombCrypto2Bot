@@ -303,6 +303,7 @@
     <Content Include="images\themes\default\your_chest_bcoin.png" />
     <Content Include="images\themes\lunar_newyear\title_error.png" />
     <Content Include="images\themes\lunar_newyear\title_heroes_list.png" />
+    <Content Include="reports\README.md" />
     <Content Include="requirements.txt" />
     <Content Include="start.bat" />
     <Content Include="start.sh" />
