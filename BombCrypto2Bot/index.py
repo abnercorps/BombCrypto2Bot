@@ -21,7 +21,7 @@ banner = """
 ** PIX:         9fe608c8-1594-469a-ae58-124a9de40a97
 *******************************************************************************
 ** Press CTRL + C to kill the bot.
-** Some configs can be found in the https://github.com/pbiajoni/bombcrypto-bot2
+** Some configs can be found in the https://github.com/pbiajoni/BombCrypto2Bot
 *******************************************************************************"""
 
 print(Fore.GREEN + banner + Style.RESET_ALL)
