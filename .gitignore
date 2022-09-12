@@ -361,3 +361,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# JetBrains Rider
+*.sln.iml
+# cache
+/**/__pycache__
+/**/**/__pycache__
+
+# vscode plugins
+/.history
+
+# config file
+/config/accounts.yaml
+/config/config.yaml
+/config/services/telegram.yaml

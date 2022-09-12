@@ -1,0 +1,70 @@
+app:
+  theme: "default"
+  verify_version: true
+  emoji: false
+  terminal_colorful: false
+  run_time_app: 1
+  monitor_to_use: 1
+  captcha: false
+  speed: "fast"
+  authenticate: true
+  multi_account:
+    enable: false
+    window_title: "bombcrypto"
+    window_fullscreen: true
+
+time_intervals:
+  send_heroes_for_work: [30, 35]
+  refresh_heroes_positions: [3, 4]
+
+chests:
+  values:
+    divide: 2
+    chest_01: 0.01425
+    chest_02: 0.03250
+    chest_03: 0.11250
+    chest_04: 0.27625
+
+threshold:
+  default: 0.7
+  error_message: 0.7
+  back_button: 0.9
+  work_button: 0.95
+  home_enable_button: 0.9
+  heroes_green_bar: 0.9
+  heroes_red_bar: 0.9
+  heroes_full_bar: 0.9
+  heroes_send_all: 0.9
+  heroes_rest_all: 0.9
+  chest: 0.70
+  jail: 0.8
+  auth_input: 0.9
+  heroes:
+    common: 0.8
+    rare: 0.8
+    super_rare: 0.8
+    epic: 0.8
+    legend: 0.8
+    super_legend: 0.8
+
+heroes:
+  mode: "green"
+  list:
+    scroll_attempts: 3
+
+offsets:
+  work_button_green: [135, 230]
+  work_button_full: [140, 170]
+  house_button: [340, 370]
+
+metamask:
+  enable: false
+  password: ""
+
+services:
+  telegram: false
+
+log:
+  save_to_file: false
+  console: false
+  show_print: false
