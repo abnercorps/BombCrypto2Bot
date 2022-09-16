@@ -162,6 +162,8 @@ class Heroes:
         wait_for_this_hero_list_object = self.images.image(
             'wait_for_this_hero_list_object')
 
+        self.log.console('Current screen is {}'.format(currentScreen))
+
         if currentScreen == "map":
             if self.actions.clickButton(back_button):
                 self.actions.sleep(1, 1, forceTime=True)
@@ -174,6 +176,14 @@ class Heroes:
         if currentScreen == "main":
             if self.actions.clickButton(menu_heroe_icon):
                 self.actions.sleep(1, 1, forceTime=True)
+                # checkCaptcha()
+                if self.recognition.waitForImage(wait_for_this_hero_list_object, threshold=0.9) is False:
+                    self.actions.refreshPage()
+                    return False
+        if currentScreen == "main_notice":
+            if self.actions.clickButton(menu_heroe_icon):
+                self.actions.sleep(1, 1, forceTime=True)
+                self.actions.clickButton(menu_heroe_icon)
                 # checkCaptcha()
                 if self.recognition.waitForImage(wait_for_this_hero_list_object, threshold=0.9) is False:
                     self.actions.refreshPage()

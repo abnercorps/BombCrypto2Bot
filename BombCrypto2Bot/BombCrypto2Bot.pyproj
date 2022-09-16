@@ -234,6 +234,7 @@
     <Content Include="images\themes\default\chests\treasure_hunt\chest_key_closed.png" />
     <Content Include="images\themes\default\chests\treasure_hunt\chest_key_hit.png" />
     <Content Include="images\themes\default\chest_hero.png" />
+    <Content Include="images\themes\default\chest_hero_notice.png" />
     <Content Include="images\themes\default\close_button.png" />
     <Content Include="images\themes\default\connect_metamask_button.png" />
     <Content Include="images\themes\default\connect_wallet_button.png" />
