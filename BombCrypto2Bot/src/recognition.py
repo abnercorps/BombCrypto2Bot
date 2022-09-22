@@ -94,11 +94,11 @@ class Recognition:
         title_heroes_list = self.images.image('title_heroes_list', theme=True)
         title_heroes_grid = self.images.image('title_heroes_grid', theme=True)
         title_login = self.images.image('title_login', theme=True)
-        chest_hero_notice = self.images.image('chest_hero_notice')
+        main_notice = self.images.image('main_notice')
 
         if self.recognition.positions(back_button) is not False:
             return "map"
-        elif self.recognition.positions(chest_hero_notice) is not False:
+        elif self.recognition.positions(main_notice) is not False:
             return "main_notice"
         elif self.recognition.positions(treasure_hunt_banner) is not False:
             return "main"        

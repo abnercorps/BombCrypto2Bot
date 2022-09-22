@@ -118,7 +118,7 @@ class Auth:
                 self.recognition.waitForImage(treasure_hunt_banner, timeout=30)
                 self.errors.verify()
 
-        if self.recognition.currentScreen() == "main":
+        if self.recognition.currentScreen() == "main" or self.recognition.currentScreen() == "main_notice":
             self.log.console('Logged in', services=True,
                              emoji='🎉', color='green')
             return True
