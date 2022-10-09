@@ -53,7 +53,7 @@ heroes:
     scroll_attempts: 3
 
 offsets:
-  work_button_green: [135, 230]
+  work_button_green: [110, 140]
   work_button_full: [140, 170]
   house_button: [340, 370]
 
