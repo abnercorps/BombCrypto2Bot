@@ -42,7 +42,7 @@ class Game:
     def clickNewMap(self):
         self.importLibs()
         self.log.console('New map', emoji='🗺️', color='magenta')
-        self.actions.sleep(2, 2, forceTime=True)
+        self.actions.sleep(5, 5, forceTime=True)
 
         self.generateMapImage()
         self.telegram.sendMapReport(callMapMethods=False)
