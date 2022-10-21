@@ -1,6 +1,9 @@
-import os
+import platform
 class Computer:
     def reboot(self):
-        os.system("shutdown.exe -r -t 0")
+        if platform.system() == "Windows": 
+            os.system("shutdown.exe -r -t 0")
+        else:
+            os.system("reboot")
 
 
