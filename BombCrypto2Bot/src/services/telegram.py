@@ -16,8 +16,8 @@ Commands = [
         "workall", "Send all heroes to work (disabled in multi account temporarily)"),
     BotCommand(
         "restall", "Send all heroes to rest (disabled in multi account temporarily)"),
-    BotCommand("donation", "Some wallets for donation")
-    BotCommand("reboot", "Reboot machine")
+    BotCommand("donation", "Some wallets for donation"),
+    BotCommand("reboot", "Reboot machine"),
     BotCommand("workgreen", "Send heroes with green stamina to work (disabled in multi account temporarily)")
 ]
 
