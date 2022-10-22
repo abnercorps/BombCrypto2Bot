@@ -16,7 +16,9 @@ Commands = [
         "workall", "Send all heroes to work (disabled in multi account temporarily)"),
     BotCommand(
         "restall", "Send all heroes to rest (disabled in multi account temporarily)"),
-    BotCommand("donation", "Some wallets for donation")
+    BotCommand("donation", "Some wallets for donation"),
+    BotCommand("reboot", "Reboot machine"),
+    BotCommand("workgreen", "Send heroes with green stamina to work (disabled in multi account temporarily)")
 ]
 
 
@@ -50,6 +52,7 @@ class Telegram:
         from src.images import Images
         from src.log import Log
         from src.recognition import Recognition
+        from src.computer import Computer
         self.actions = Actions()
         self.tokens = Tokens()
         self.config = Config().read()
@@ -59,6 +62,7 @@ class Telegram:
         self.images = Images()
         self.log = Log()
         self.recognition = Recognition()
+        self.computer = Computer()
 
     def telegramConfig(self):
         try:
@@ -111,9 +115,17 @@ class Telegram:
             if userHasPermission(self, update):
                 self.commandAllHeroesToWork(update)
 
+        def sendGreenHeroesToWork(update: Update, context: CallbackContext) -> None:
+            if userHasPermission(self, update):
+                self.commandGreenHeroesToWork(update)
+
         def sendAllHeroesToRest(update: Update, context: CallbackContext) -> None:
             if userHasPermission(self, update):
                 self.commandAllHeroesToRest(update)
+        
+        def sendRebootComputer(update: Update, context: CallbackContext) -> None:
+            if userHasPermission(self, update):
+                self.commandRebootComputer(update)
 
         commands = [
             ['chat_id', sendChatId],
@@ -123,6 +135,8 @@ class Telegram:
             ['workall', sendAllHeroesToWork],
             ['restall', sendAllHeroesToRest],
             ['donation', sendDonation],
+            ['reboot', sendRebootComputer],
+            ['workgreen', sendGreenHeroesToWork],
         ]
 
         for command in commands:
@@ -264,8 +278,18 @@ class Telegram:
             update.message.reply_text(
                 '⚠️ Command disabled, because of the Multi Accounts is enabled.')
 
+    def commandGreenHeroesToWork(self, update):
+        if self.config['app']['multi_account']['enable'] is not True:
+            self.heroes.getMoreHeroes('green')
+        else:
+            update.message.reply_text(
+                '⚠️ Command disabled, because of the Multi Accounts is enabled.')
+
     def commandSendDonation(self, update):
         update.message.reply_text(
             '🎁 Smart Chain Wallet: \n\n 0x4847C29561B6682154E25c334E12d156e19F613a \n\n Thank You! 😀')
         update.message.reply_text(
             '🎁 Chave PIX: \n\n 08912d17-47a6-411e-b7ec-ef793203f836 \n\n Muito obrigado! 😀')
+
+    def commandRebootComputer(self, update):
+        self.computer.reboot()

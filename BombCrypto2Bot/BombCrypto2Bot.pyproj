@@ -65,6 +65,9 @@
     <Compile Include="src\heroes.py" />
     <Compile Include="src\images.py" />
     <Compile Include="src\log.py" />
+    <Compile Include="src\computer.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\multi_account.py" />
     <Compile Include="src\process\forever.py" />
     <Compile Include="src\recognition.py" />
