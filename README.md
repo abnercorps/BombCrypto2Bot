@@ -50,6 +50,8 @@ Developers (Base code):
 This bot is free and open source.
 
 Features:  
+* 22/10/2022 - Now you can send heroes with green stamina using telegram with command /workgreen
+* 22/10/2022 - Now you can reboot the computer using telegram with command /reboot
 * Refactored code
 * Add 3 captchas
 * Multi account with many windows side-by-side or many windows maximized
