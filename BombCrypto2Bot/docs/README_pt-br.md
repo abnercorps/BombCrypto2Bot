@@ -44,6 +44,8 @@ Desenvolvedores (Código base):
 Este bot é grátis e de código aberto.
 
 Recursos:  
+* 22/10/2022 - Agora você pode mandar os heroes com a barra verde de stamina com o telegram com o comando /workgreen
+* 22/10/2022 - Agora você pode reiniciar o computador usando o telegram com o comando /reboot
 * Refatoração do código
 * Adicionado os 3 captchas
 * Temas
